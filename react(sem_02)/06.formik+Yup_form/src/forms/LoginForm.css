@@ -1,0 +1,78 @@
+/* Main page background */
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+/* Center form */
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form box */
+.register-form {
+  background: #1e1e1e;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Title */
+.register-form h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Input group */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: #2c2c2c;
+  color: white;
+  outline: none;
+}
+
+/* Input focus */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4caf50;
+}
+
+/* Error text */
+.error {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Button hover */
+.submit-btn:hover {
+  background: #45a049;
+}
