@@ -26,8 +26,8 @@
 | 9:15–10:45  | Yogesh Sir                 | 9:15–10:45  | Samir Sir (React)    |
 | 10:45–12:15 | Samir Sir (React)                  | 10:45–12:15 | Yogesh Sir          |
 | 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
-| 1:15–2:45   | Samir Sir (C++)                    | 1:15–2:15      | Neel Sir      |
-| 2:45–3:15   | Neel Sir                      | 2:15–3:15    | Samir Sir (C++)      |
+| 1:15–2:45   | Samir Sir (C++)                    | 1:15–2:15      | Ranjan Sir      |
+| 2:45–3:15   | Ranjan Sir                      | 2:15–3:15    | Samir Sir (C++)      |
 | 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
 | 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
 | 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
