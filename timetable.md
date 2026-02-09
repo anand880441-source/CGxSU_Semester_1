@@ -2,17 +2,17 @@
 ### 7 Feb
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:15–10:45  | Samir Sir (React)                | 9:15–10:45  | Neel Sir     |
-| 10:45–12:15 | Neel Sir                   | 10:45–12:15 | Samir Sir (React)           |
+| 9:15–10:45  | Yogesh Sir                 | 9:15–10:45  | Ranjan Sir     |
+| 10:45–12:15 | Neel Sir                   | 10:45–12:15 | Yogesh Sir            |
 | 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
-| 1:15–2:45   | Samir Sir (C++)                   | 1:15–2:15      | Yogesh Sir          |
-| 2:45–3:15   | Yogesh Sir                  | 2:15–3:15    | Samir Sir (C++)     |
+| 1:15–2:45   | Ranjan Sir                    | 1:15–2:15      | Neel Sir          |
+| 2:45–3:15   | Portfolio Work                  | 2:15–3:15    | Portfolio Work     |
 
 ### 6 Feb
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:15–10:45  | Samir Sir (C++)                 | 9:15–10:45  | Neel Sir     |
-| 10:45–12:15 | Neel Sir                   | 10:45–12:15 | Samir Sir (C++)          |
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Neel Sir     |
+| 10:45–12:15 | Neel Sir                   | 10:45–12:15 | Yogesh Sir           |
 | 12:15–1:15  | Break                        | 12:15–1:15  | Break                  |
 | 1:15–2:45   | Vanguard Auction                   | 1:15–2:15      | Vanguard Auction          |
 | 2:45–3:15   | Vanguard Auction                 | 2:15–3:15    | Vanguard Auction      |
