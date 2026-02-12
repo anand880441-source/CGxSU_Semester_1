@@ -1,3 +1,106 @@
+### 21 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Yogesh Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Ranjan Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Ranjan Sir      |
+
+### 20 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Yogesh Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Ranjan Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Ranjan Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
+
+### 19 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Yogesh Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Ranjan Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Ranjan Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
+
+### 18 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Neel Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Yogesh Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Yogesh Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
+
+### 17 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Yogesh Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Neel Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Neel Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
+
+### 16 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Neel Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Yogesh Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Yogesh Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
+
+
+### 14 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Yogesh Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break          |
+| 1:15–2:45   | Ranjan Sir                   | 1:15–2:15      | Samir Sir (C++)       |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Ranjan Sir      |
+
+
+### 13 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Neel Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break            |
+| 1:15–2:45   | Yogesh Sir                   | 1:15–2:15      | Samir Sir (C++)         |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Yogesh Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
+
+### 12 Feb
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Yogesh Sir                  | 9:15–10:45  | Samir Sir (React)    |
+| 10:45–12:15 | Samir Sir (React)                   | 10:45–12:15 | Yogesh Sir           |
+| 12:15–1:15  | Break                        | 12:15–1:15  | Break          |
+| 1:15–2:45   | Ranjan Sir                   | 1:15–2:15      | Samir Sir (C++)       |
+| 2:45–3:15   | Samir Sir (C++)                   | 2:15–3:15    | Ranjan Sir      |
+| 4:15–4:40   | Break                        | 4:15–4:40  | Break                  |
+| 4:40–6:00   | Industry Readiness 01 | 4:40–6:00  | Industry Readiness 01                 |
+| 6:00–7:00   | Industry Readiness 02| 6:00–7:00   | Industry Readiness 02                 |
 
 ### 7 Feb
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
