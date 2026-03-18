@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaArrowRightLong, FaBars, FaXmark } from 'react-icons/fa6'
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
 
@@ -20,9 +21,14 @@ export default function Nav() {
 
                 {/* Nav bar */}
                 <div className="hidden sm:flex items-center justify-between space-x-6 font-semibold">
-                    <a href="#home">Home</a>
+                    {/* <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#Career">Career</a>
+                    <a href="#Career">Career</a> */}
+
+                    <Link to="/" className="hover:text-amber-400 transition-colors">Home</Link>
+                    <Link to="/about" className="hover:text-amber-400 transition-colors">About</Link>
+                    <Link to="/carrer" className="hover:text-amber-400 transition-colors">Career</Link>
+                    <Link to="/support" className="hover:text-amber-400 transition-colors">Support</Link>
                 </div>
 
                 {/* Button */}
@@ -42,10 +48,15 @@ export default function Nav() {
                 {/* mobile nav bar */}
                 {
                     menuBar && <div className=" font-semibold text-2xl  flex flex-col items-center justify-center space-y-6 fixed top-0 right-0 h-screen w-50 bg-amber-400 sm:hidden">
-                        <a onClick={() => { setMenu(!menuBar) }} href="#home">Home</a>
+                        {/* <a onClick={() => { setMenu(!menuBar) }} href="#home">Home</a>
                         <a onClick={() => { setMenu(!menuBar) }} href="#about">About</a>
-                        <a onClick={() => { setMenu(!menuBar) }} href="#Career">Career</a>
-                        <div> 
+                        <a onClick={() => { setMenu(!menuBar) }} href="#Career">Career</a> */}
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/" className="hover:text-amber-400 transition-colors">Home</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/about" className="hover:text-amber-400 transition-colors">About</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/carrer" className="hover:text-amber-400 transition-colors">Career</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/support" className="hover:text-amber-400 transition-colors">Support</Link>
+
+                        <div>
                             <button onClick={() => { setMenu(!menuBar) }} className=" flex items-center gap-2 px-2.5 py-2.5 bg-amber-500 rounded-full">
                                 Contact us
                                 <FaArrowRightLong />
