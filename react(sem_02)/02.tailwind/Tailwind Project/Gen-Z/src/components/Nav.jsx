@@ -51,10 +51,10 @@ export default function Nav() {
                         {/* <a onClick={() => { setMenu(!menuBar) }} href="#home">Home</a>
                         <a onClick={() => { setMenu(!menuBar) }} href="#about">About</a>
                         <a onClick={() => { setMenu(!menuBar) }} href="#Career">Career</a> */}
-                    <Link onClick={() => { setMenu(!menuBar) }} to="/" className="hover:text-amber-400 transition-colors">Home</Link>
-                    <Link onClick={() => { setMenu(!menuBar) }} to="/about" className="hover:text-amber-400 transition-colors">About</Link>
-                    <Link onClick={() => { setMenu(!menuBar) }} to="/carrer" className="hover:text-amber-400 transition-colors">Career</Link>
-                    <Link onClick={() => { setMenu(!menuBar) }} to="/support" className="hover:text-amber-400 transition-colors">Support</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/" className="hover:text-purple-500 transition-colors">Home</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/about" className="hover:text-purple-500 transition-colors">About</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/carrer" className="hover:text-purple-500 transition-colors">Career</Link>
+                    <Link onClick={() => { setMenu(!menuBar) }} to="/support" className="hover:text-purple-500 transition-colors">Support</Link>
 
                         <div>
                             <button onClick={() => { setMenu(!menuBar) }} className=" flex items-center gap-2 px-2.5 py-2.5 bg-amber-500 rounded-full">
