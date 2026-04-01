@@ -1,4 +1,4 @@
-# Task 03 — Pagination 
+# Pagination 
 
 > **Topic:** Handling large data with `skip` and `limit` | **Database:** MongoDB + Mongoose
 

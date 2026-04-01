@@ -1,37 +1,32 @@
-# Task 02 — Query Parameters 
+#  Sorting 
 
- **Topic:** Filtering data with `req.query` | **Database:** MongoDB + Mongoose
-
----
-
-
-
-
-##  What Are Query Parameters?
-
-Query parameters are the part of a URL that comes **after the `?` symbol**.
-
-```
-GET /brandproducts?category=laptops&brand=Apple
-```
-
-- `?` marks the start of query parameters
-- `category=laptops` is one parameter
-- `&` separates multiple parameters
-- `brand=Apple` is another parameter
-
-In Express, all of these are available inside `req.query` automatically.
+ **Topic:** Sorting results by Price using `asc` and `desc` | **Database:** MongoDB + Mongoose
 
 ---
 
-##  Route Params vs Query Params
 
-| | Route Params | Query Params |
-|---|---|---|
-| **URL example** | `/product/123` | `/brandproducts?brand=Apple` |
-| **How to access** | `req.params.id` | `req.query.brand` |
-| **Used for** | One specific item by ID | Filtering a list |
-| **Required?** | Yes, part of the URL | No, always optional |
+
+##  What Is Sorting?
+
+Sorting arranges your results in a specific order. For example:
+- Show products **cheapest first** → ascending order
+- Show products **most expensive first** → descending order
+
+---
+
+##  How MongoDB Sorting Works
+
+In Mongoose you chain `.sort()` after `.find()`. You pass it an object with the field name and a direction value:
+
+```js
+Product.find().sort({ Price: 1 })   // ascending  → 1000, 2000, 3000
+Product.find().sort({ Price: -1 })  // descending → 3000, 2000, 1000
+```
+
+| Value | Direction |
+|---|---|
+| `1`  | Ascending — smallest first (1→10, A→Z) |
+| `-1` | Descending — largest first (10→1, Z→A) |
 
 ---
 
@@ -40,8 +35,8 @@ In Express, all of these are available inside `req.query` automatically.
 ### Step 1 — Create your project folder and initialize it
 
 ```bash
-mkdir task-02-query-params
-cd task-02-query-params
+mkdir task-04-sorting
+cd task-04-sorting
 npm init -y
 ```
 
@@ -174,32 +169,28 @@ app.get("/get-products", async (req, res) => {
 
 ---
 
-### Step 10 — Route: Filter by Category and Brand
+### Step 10 — Route: Sort Products by Price
 
-This is the key route. We start with an empty `filter` object. We only add `category` to the filter if it was actually sent — same for `brand`. This way the same route works for one filter, both filters, or no filter at all.
+We start with an empty `sortePrice` object. We check if `Price` is `"asc"` or `"desc"` and set the value to `1` or `-1` accordingly. If nothing is sent, `.sort({})` just returns products in their default order.
 
 ```js
-app.get("/brandproducts", async (req, res) => {
+app.get("/sortedproduct", async (req, res) => {
   try {
-    const { category, brand } = req.query
+    const Price = req.query.Price
 
-    const filter = {}
+    const sortePrice = {}
 
-    if (category) {
-      filter.category = category
+    if (Price === "asc") {
+      sortePrice.Price = 1
     }
 
-    if (brand) {
-      filter.brand = brand
+    if (Price === "desc") {
+      sortePrice.Price = -1
     }
 
-    const products = await Product.find(filter)
+    const products = await Product.find().sort(sortePrice)
 
-    if (!products) {
-      return res.status(404).send("This category not Found")
-    }
-
-    res.json(products)
+    res.status(201).json(products)
   } catch (error) {
     res.status(404).send(error)
   }
@@ -218,7 +209,7 @@ app.listen(PORT, () => {
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ```bash
 node index.js
@@ -232,7 +223,7 @@ MongoDB Connected Successfully
 
 ---
 
-## 🧪 How to Test
+##  How to Test
 
 First add test data in Postman:
 
@@ -250,61 +241,61 @@ Body (raw JSON):
 ]
 ```
 
-Now test your filter routes:
+Now test sorting:
 
 ```
-# Get all products (no filter)
-GET http://localhost:5000/brandproducts
+# Cheapest first → Sony Headphones (8000) comes first
+GET http://localhost:5000/sortedproduct?Price=asc
 
-# Filter by category only
-GET http://localhost:5000/brandproducts?category=smartphones
-GET http://localhost:5000/brandproducts?category=laptops
+# Most expensive first → MacBook Pro (120000) comes first
+GET http://localhost:5000/sortedproduct?Price=desc
 
-# Filter by brand only
-GET http://localhost:5000/brandproducts?brand=Apple
-GET http://localhost:5000/brandproducts?brand=Samsung
-
-# Filter by both category AND brand
-GET http://localhost:5000/brandproducts?category=smartphones&brand=Apple
-GET http://localhost:5000/brandproducts?category=laptops&brand=Apple
+# No sort param → default order (insertion order)
+GET http://localhost:5000/sortedproduct
 ```
 
 ---
 
-## 💡 How the Dynamic Filter Works
-
-This is the most important concept in this task. The `filter` object grows based on what is sent:
+##  How the Sort Object Builds Up
 
 ```js
-// Only category sent → filter = { category: "laptops" }
-// Only brand sent    → filter = { brand: "Apple" }
-// Both sent          → filter = { category: "laptops", brand: "Apple" }
-// Nothing sent       → filter = {}  → returns all products
-```
+// When Price = "asc"
+sortePrice = {}
+sortePrice.Price = 1
+// sortePrice is now { Price: 1 }
+// Product.find().sort({ Price: 1 }) → cheapest first
 
-`Product.find(filter)` then uses whatever is inside `filter` as the search condition.
+// When Price = "desc"
+sortePrice = {}
+sortePrice.Price = -1
+// sortePrice is now { Price: -1 }
+// Product.find().sort({ Price: -1 }) → most expensive first
+
+// When Price is not sent
+sortePrice = {}
+// Product.find().sort({}) → default order, no sorting applied
+```
 
 ---
 
-## 💡 Query Params Are Always Strings
+##  Why Two Separate `if` Statements?
+
+We use two separate `if` statements instead of `if / else if`. Both check for their own value independently. This is a clean and readable pattern — easy to extend if you later add more sort options like `title=asc`.
 
 ```js
-// Price comes as "60000" (string), not 60000 (number)
-const price = req.query.Price       // "60000"
-const price = Number(req.query.Price) // 60000  ← convert when needed
+if (Price === "asc")  { sortePrice.Price = 1  }
+if (Price === "desc") { sortePrice.Price = -1 }
 ```
-
-For `category` and `brand` this does not matter since they are already strings. But remember this if you ever filter by a number field.
 
 ---
 
 ## ✅ What You Learned
 
-- How `req.query` reads values from the URL after `?`
-- How to destructure multiple query params at once
-- How to build a dynamic `filter` object step by step
-- How `if (category)` safely skips undefined values
-- How `Product.find(filter)` applies all filters at once
+- What ascending and descending order means
+- How `.sort()` works in Mongoose with `1` and `-1`
+- How to build a sort object dynamically using `if` checks
+- How `asc` and `desc` strings map to `1` and `-1`
+- How an empty `.sort({})` returns products in default order
 
 ---
 
@@ -313,6 +304,6 @@ For `category` and `brand` this does not matter since they are already strings. 
 | Code | Meaning |
 |---|---|
 | `200` | OK — Product saved |
-| `201` | Created — Bulk products added |
-| `404` | Not Found — No products found |
+| `201` | Created — Sorted products returned |
+| `404` | Not Found — Error occurred |
 | `500` | Server Error — Something broke |

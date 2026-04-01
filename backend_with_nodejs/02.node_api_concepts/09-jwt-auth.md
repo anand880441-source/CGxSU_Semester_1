@@ -1,4 +1,4 @@
-# Task 7 — JWT Authentication 
+# JWT Authentication 
 
 **Topic:** Creating and verifying JSON Web Tokens | **Database:** MongoDB + Mongoose
 ---
@@ -197,27 +197,43 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
 ```
 
 ```js
-const protect = (req, res, next) => {
-  const authHeader = req.headers.authorization
-
-  if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    return res.status(401).json({
-      success: false,
-      message: "No token provided. Please login first.",
-    })
-  }
-
-  const token = authHeader.split(" ")[1]
-
+function protect(req, res, next) {
   try {
-    const decoded = jwt.verify(token, SECRET_KEY)
-    req.user = decoded
-    next()
+    const authHeader = req.headers.authorization;
+
+    // Step 1: Check header
+    if (!authHeader) {
+      return res.status(401).json({
+        success: false,
+        message: "Unauthorized: Token missing",
+      });
+    }
+
+    // Step 2: Check Bearer format
+    if (!authHeader.startsWith("Bearer ")) {
+      return res.status(401).json({
+        success: false,
+        message: "Unauthorized: Invalid token format",
+      });
+    }
+
+    // Step 3: Extract token
+    const token = authHeader.split(" ")[1];
+
+    // Step 4: Verify token
+    const decoded = jwt.verify(token, SECRET_KEY);
+
+    // Step 5: Attach user
+    req.user = decoded;
+
+    // Step 6: Next
+    next();
+
   } catch (error) {
     return res.status(401).json({
       success: false,
-      message: "Invalid or expired token. Please login again.",
-    })
+      message: "Unauthorized: Token invalid or expired",
+    });
   }
 }
 ```
@@ -229,23 +245,33 @@ const protect = (req, res, next) => {
 We pass the `protect` middleware before the route handler. If the token is missing or invalid, the middleware blocks the request and the handler never runs.
 
 ```js
+// Step 1: Define protected route
 app.get("/profile", protect, async (req, res) => {
   try {
-    const user = await User.findById(req.user.userId).select("-password")
 
+    // Step 2: Get userId from middleware (req.user)
+    const userId = req.user.userId;
+
+    // Step 3: Find user in database
+    const user = await User.findById(userId);
+
+    // Step 4: Check if user exists
     if (!user) {
-      return res.status(404).json({ success: false, message: "User not found" })
+      return res.status(404).json({ msg: "User not found" });
     }
 
-    res.status(200).json({
-      success: true,
-      message: "Here is your profile",
-      data: user,
-    })
+    // Step 5: Send response
+    res.json({
+      msg: "Logged-in user fetched",
+      user,
+    });
+
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message })
+
+    // Step 6: Handle error
+    res.status(500).json({ msg: "Server error", error });
   }
-})
+});
 ```
 
 ---

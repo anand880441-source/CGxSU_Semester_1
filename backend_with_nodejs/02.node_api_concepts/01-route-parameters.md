@@ -1,4 +1,4 @@
-# Task 01 — Route Parameters 
+#  Route Parameters 
 
 **Topic:** Dynamic URLs with `req.params` | **Database:** MongoDB + Mongoose
 

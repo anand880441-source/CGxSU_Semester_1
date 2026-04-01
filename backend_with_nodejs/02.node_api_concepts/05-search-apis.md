@@ -1,4 +1,4 @@
-# Task 05 — Search APIs 
+#  Search APIs 
 
 **Topic:** Text-based searching with `$regex` | **Database:** MongoDB + Mongoose
 
