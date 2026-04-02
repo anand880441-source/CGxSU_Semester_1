@@ -41,6 +41,9 @@
 | 12:15–1:15  | Break                              | 12:15–1:15  | Break                  |
 | 1:15–2:45   | Yogesh Sir (Node)                   | 1:15–2:45    | Samir Sir (C++)      |
 | 2:45–4:15   | Samir Sir (C++)                  | 2:45–4:15      |   Yogesh Sir (Node)   |
+| 4:15–4:45   | Break                        | 4:15–4:45  | Break                  |
+| 4:45–6:00   | Industry Readiness 01 | 4:45–6:00  | Industry Readiness 01                 |
+
 
 ### 03 April
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
@@ -61,6 +64,8 @@
 | 12:15–1:15  | Break                              | 12:15–1:15  | Break            |
 | 1:15–2:45   | English/Project Work                   | 1:15–2:45    | English/Project Work           |
 | 2:45–4:15   | Samir Sir (C++)                  | 2:45–4:15      |   Yogesh Sir (Node)   |
+| 4:15–4:45   | Break                        | 4:15–4:45  | Break                  |
+| 4:45–6:00   | Industry Readiness 01 | 4:45–6:00  | Industry Readiness 01                 |
 
 ### 01 April
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
