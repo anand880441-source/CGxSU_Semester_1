@@ -3,7 +3,7 @@
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
 | 9:15–10:45  | Ranjan Sir (Full Stack)            | 9:15–10:45  | Ashish Sir (Maths)    |
-| 10:45–12:15 | Ashish Sir (Maths)                 | 10:45–12:15 | Neel Sir (SEO)        |
+| 10:45–12:15 | Ashish Sir (Maths)                 | 10:45–12:15 | Ranjan Sir (Full Stack)        |
 | 12:15–1:15  | Break                              | 12:15–1:15  | Break            |
 | 1:15–2:30   | English/Project Work               | 1:15–2:30    | English/Project Work           |
 | 2:30–3:30   | Vanguard Activity                  | 2:30–3:30      |  Vanguard Activity    |
@@ -13,7 +13,7 @@
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:15–10:45  | Neel Sir (SEO)                | 9:15–10:45  | Ashish Sir (Maths)    |
+| 9:15–10:45  | Samir Sir (C++)                | 9:15–10:45  | Ashish Sir (Maths)    |
 | 10:45–12:15 | Ashish Sir (Maths)            | 10:45–12:15 | Samir Sir (C++)        |
 | 12:15–1:15  | Break                              | 12:15–1:15  | Break            |
 | 1:15–2:45   | English/Project Work                   | 1:15–2:45    | English/Project Work           |
