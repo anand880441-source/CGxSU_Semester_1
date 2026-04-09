@@ -1,3 +1,27 @@
+### 10 April
+
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Neel Sir (SEO)                | 9:15–10:45  | Ashish Sir (Maths)    |
+| 10:45–12:15 | Ashish Sir (Maths)            | 10:45–12:15 | Neel Sir (SEO)        |
+| 12:15–1:15  | Break                              | 12:15–1:15  | Break            |
+| 1:15–2:45   | Ranjan Sir (React)                   | 1:15–2:45    | Samir Sir (C++)          |
+| 2:45–4:15   | Samir Sir (C++)                  | 2:45–4:15      |   Yogesh Sir (Node)   |
+| 4:15–4:45   | Break                        | 4:15–4:45  | Break                  |
+| 4:45–6:00   | Industry Readiness 01 | 4:45–6:00  | Industry Readiness 01                 |
+
+### 09 April
+
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:15–10:45  | Samir Sir (C++)                | 9:15–10:45  | Ashish Sir (Maths)    |
+| 10:45–12:15 | Ashish Sir (Maths)            | 10:45–12:15 | Samir Sir (C++)        |
+| 12:15–1:15  | Break                              | 12:15–1:15  | Break            |
+| 1:15–2:45   | English/Project Work                   | 1:15–2:45    | English/Project Work           |
+| 2:45–4:15   | Yogesh Sir (Node)                  | 2:45–4:15      |   Ranjan Sir (React)   |
+| 4:15–4:45   | Break                        | 4:15–4:45  | Break                  |
+| 4:45–6:00   | Industry Readiness 01 | 4:45–6:00  | Industry Readiness 01                 |
+
 ### 08 April
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
