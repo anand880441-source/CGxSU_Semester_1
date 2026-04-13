@@ -1,3 +1,31 @@
+### 14 April
+
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:00–10:30  | Ashish Sir (Maths)                | 9:00–10:30   | Neel Sir (Backend)    |
+| 10:30–12:00 | Neel Sir (Backend)            | 10:30–12:00 | Ashish Sir (Maths)        |
+| 12:00–1:00  | Break                              | 12:00–1:00  | Break            |
+| 1:00–2:00   | English                            | 1:00–2:00    |   Samir Sir          |
+| 2:00–3:00   | Ranjan Sir (React)                  | 2:00–3:00      |   English    |
+| 3:00–4:00   | Samir Sir                   | 3:00–4:00      |   Ranjan Sir (React)   |
+| 4:00–4:15   | Break                        | 4:00–4:15  | Break                  |
+| 4:15–5:15   | Industry Readiness 01 | 4:15–5:15  | Industry Readiness 01                 |
+| 5:15–6:00   | Industry Readiness 02 | 5:15–6:00  | Industry Readiness 02                |
+
+### 13 April
+
+| Time        | CG LAB 1                     | Time        | CG LAB 2               |
+|-------------|------------------------------|-------------|-------------------------|
+| 9:00–10:30  | Ashish Sir (Maths)                | 9:00–10:30   | Ranjan Sir (React)    |
+| 10:30–12:00 | Ranjan Sir (React)            | 10:30–12:00 | Ashish Sir (Maths)        |
+| 12:00–1:00  | Break                              | 12:00–1:00  | Break            |
+| 1:00–2:00   | English                            | 1:00–2:00    |   Samir Sir (C++)         |
+| 2:00–3:00   | Neel Sir (Backend)                  | 2:00–3:00      |   English    |
+| 3:00–4:00   | Samir Sir (C++)                  | 3:00–4:00      |   Neel Sir (Backend)   |
+| 4:00–4:15   | Break                        | 4:00–4:15  | Break                  |
+| 4:15–5:15   | Industry Readiness 01 | 4:15–5:15  | Industry Readiness 01                 |
+| 5:15–6:00   | Industry Readiness 02 | 5:15–6:00  | Industry Readiness 02                |
+
 ### 11 April
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
