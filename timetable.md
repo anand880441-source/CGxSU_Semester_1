@@ -2,12 +2,12 @@
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:00–10:30  | Ashish Sir (Maths)                | 9:00–10:30   | Neel Sir (Backend)    |
-| 10:30–12:00 | Neel Sir (Backend)            | 10:30–12:00 | Ashish Sir (Maths)        |
+| 9:00–10:30  | Ashish Sir (Maths)                | 9:00–10:30   | Ranjan Sir (React)    |
+| 10:30–12:00 | Ranjan Sir (React)            | 10:30–12:00 | Ashish Sir (Maths)        |
 | 12:00–1:00  | Break                              | 12:00–1:00  | Break            |
-| 1:00–2:00   | English                            | 1:00–2:00    |   EVS          |
-| 2:00–3:00   | Ranjan Sir (React)                  | 2:00–3:00      |   English    |
-| 3:00–4:00   | EVS                   | 3:00–4:00      |   Ranjan Sir (React)   |
+| 1:00–2:00   | English                            | 1:00–2:00    |   Maths(Unit 1 Test)          |
+| 2:00–3:00   | Yogesh Sir (Node)                  | 2:00–3:00      |   English    |
+| 3:00–4:00   | Maths(Unit 1 Test)                   | 3:00–4:00      |   Yogesh Sir (Node)  |
 | 4:00–4:15   | Break                        | 4:00–4:15  | Break                  |
 | 4:15–5:15   | Industry Readiness 01 | 4:15–5:15  | Industry Readiness 01                 |
 | 5:15–6:00   | Industry Readiness 02 | 5:15–6:00  | Industry Readiness 02                |
