@@ -245,57 +245,6 @@ app.get('/dashboard', auth, (req, res) => {
 
 ---
 
-### 5.3 Role-Based Middleware (Reusable Pattern)
-
-When different routes need different permission levels, use a factory function — a function that returns a middleware.
-
-```js
-// src/middlewares/role.js
-
-function requireRole(role) {
-  return function (req, res, next) {
-    if (req.user && req.user.role === role) {
-      next();
-    } else {
-      res.status(403).json({ message: 'Access denied. Insufficient permissions.' });
-    }
-  };
-}
-
-module.exports = requireRole;
-```
-
-Usage:
-
-```js
-const requireRole = require('./middlewares/role');
-
-app.get('/admin',   requireRole('admin'),  handler);
-app.get('/editor',  requireRole('editor'), handler);
-```
-
-One middleware function — used for any role. This is the reusable design pattern.
-
----
-
-### 5.4 Async Middleware
-
-When your middleware performs an async operation (like a database call), use `async/await` and always wrap it in a `try/catch` to forward errors properly.
-
-```js
-const asyncMiddleware = async (req, res, next) => {
-  try {
-    const data = await someAsyncDatabaseCall();
-    req.data = data; // attach to req for use in route handler
-    next();
-  } catch (err) {
-    next(err); // forward error to the error handler
-  }
-};
-```
-
----
-
 ## 6. Execution Order
 
 ### Order Matters — Always
