@@ -1,0 +1,311 @@
+# CI/CD & Infrastructure Knowledge API Documentation
+
+GOOGLE DRIVE DATASET LINK: https://drive.google.com/file/d/1dmkbDxnzq8HWaFPhu9n6EfEyeC1sb54w/view?usp=drive_link
+---
+
+# CI/CD Workflow Operations
+
+| Method       | Endpoint                         | Description                 |
+| :----------- | :------------------------------- | :-------------------------- |
+| **`GET`**    | `/api/v1/workflows`              | Fetch all CI/CD workflows   |
+| **`GET`**    | `/api/v1/workflows/:id`          | Fetch workflow details      |
+| **`POST`**   | `/api/v1/workflows`              | Create new workflow         |
+| **`PUT`**    | `/api/v1/workflows/:id`          | Replace workflow            |
+| **`PATCH`**  | `/api/v1/workflows/:id/content`  | Update workflow content     |
+| **`DELETE`** | `/api/v1/workflows/:id`          | Delete workflow             |
+| **`GET`**    | `/api/v1/workflows/random`       | Fetch random workflow       |
+| **`GET`**    | `/api/v1/workflows/latest`       | Fetch latest workflows      |
+| **`GET`**    | `/api/v1/workflows/trending`     | Fetch trending workflows    |
+| **`GET`**    | `/api/v1/workflows/recommended`  | Fetch recommended workflows |
+| **`GET`**    | `/api/v1/workflows/popular`      | Fetch popular workflows     |
+| **`GET`**    | `/api/v1/workflows/history/:id`  | Fetch workflow history      |
+| **`PATCH`**  | `/api/v1/workflows/:id/archive`  | Archive workflow            |
+| **`PATCH`**  | `/api/v1/workflows/:id/restore`  | Restore workflow            |
+| **`GET`**    | `/api/v1/workflows/:id/versions` | Fetch workflow versions     |
+| **`POST`**   | `/api/v1/workflows/:id/clone`    | Clone workflow              |
+| **`GET`**    | `/api/v1/workflows/:id/logs`     | Fetch workflow logs         |
+| **`GET`**    | `/api/v1/workflows/:id/metrics`  | Fetch workflow metrics      |
+| **`POST`**   | `/api/v1/workflows/:id/run`      | Trigger workflow run        |
+| **`POST`**   | `/api/v1/workflows/:id/cancel`   | Cancel running workflow     |
+
+---
+
+# Kubernetes & Infrastructure Routes
+
+| Method    | Endpoint                    | Description                          |
+| :-------- | :-------------------------- | :----------------------------------- |
+| **`GET`** | `/api/v1/infra/k8s`         | Fetch Kubernetes guides              |
+| **`GET`** | `/api/v1/infra/docker`      | Fetch Docker guides                  |
+| **`GET`** | `/api/v1/infra/helm`        | Fetch Helm guides                    |
+| **`GET`** | `/api/v1/infra/terraform`   | Fetch Terraform guides               |
+| **`GET`** | `/api/v1/infra/aws`         | Fetch AWS infrastructure guides      |
+| **`GET`** | `/api/v1/infra/gcp`         | Fetch GCP infrastructure guides      |
+| **`GET`** | `/api/v1/infra/azure`       | Fetch Azure infrastructure guides    |
+| **`GET`** | `/api/v1/infra/pods`        | Fetch Pod related guides             |
+| **`GET`** | `/api/v1/infra/services`    | Fetch Service related guides         |
+| **`GET`** | `/api/v1/infra/deployments` | Fetch Deployment related guides      |
+| **`GET`** | `/api/v1/infra/ingress`     | Fetch Ingress guides                 |
+| **`GET`** | `/api/v1/infra/configmaps`  | Fetch ConfigMap guides               |
+| **`GET`** | `/api/v1/infra/secrets`     | Fetch Secret management guides       |
+| **`GET`** | `/api/v1/infra/volumes`     | Fetch Volume guides                  |
+| **`GET`** | `/api/v1/infra/networking`  | Fetch networking guides              |
+| **`GET`** | `/api/v1/infra/autoscaling` | Fetch autoscaling guides             |
+| **`GET`** | `/api/v1/infra/security`    | Fetch infrastructure security guides |
+| **`GET`** | `/api/v1/infra/monitoring`  | Fetch monitoring setup guides        |
+| **`GET`** | `/api/v1/infra/logging`     | Fetch centralized logging guides     |
+| **`GET`** | `/api/v1/infra/templates`   | Fetch reusable templates             |
+
+---
+
+# Search & Discovery Routes
+
+| Method    | Endpoint                                   | Description           |
+| :-------- | :----------------------------------------- | :-------------------- |
+| **`GET`** | `/api/v1/search?q=github-actions`          | Full text search      |
+| **`GET`** | `/api/v1/search/tags`                      | Fetch all tags        |
+| **`GET`** | `/api/v1/search/by-tag/:tag`               | Search by tag         |
+| **`GET`** | `/api/v1/search/popular`                   | Popular searches      |
+| **`GET`** | `/api/v1/search/recent`                    | Recent searches       |
+| **`GET`** | `/api/v1/search/autocomplete?q=kub`        | Search autocomplete   |
+| **`GET`** | `/api/v1/search/fuzzy?q=dokcer`            | Fuzzy search          |
+| **`GET`** | `/api/v1/search/exact?q=terraform`         | Exact match search    |
+| **`GET`** | `/api/v1/search/category/:name`            | Search by category    |
+| **`GET`** | `/api/v1/search/language/:lang`            | Search by language    |
+| **`GET`** | `/api/v1/search/tool/:tool`                | Search by DevOps tool |
+| **`GET`** | `/api/v1/search/advanced`                  | Advanced search       |
+| **`GET`** | `/api/v1/search/suggestions?q=ci`          | Suggested queries     |
+| **`GET`** | `/api/v1/search/history`                   | User search history   |
+| **`GET`** | `/api/v1/search/trending`                  | Trending topics       |
+| **`GET`** | `/api/v1/search/recommended`               | Recommended searches  |
+| **`GET`** | `/api/v1/search/filter?tag=k8s&type=debug` | Combined filtering    |
+| **`GET`** | `/api/v1/search/yaml`                      | Search YAML templates |
+| **`GET`** | `/api/v1/search/snippets`                  | Search code snippets  |
+| **`GET`** | `/api/v1/search/errors?q=crashloop`        | Search errors         |
+
+---
+
+# YAML & Configuration Routes
+
+| Method     | Endpoint                                | Description               |
+| :--------- | :-------------------------------------- | :------------------------ |
+| **`POST`** | `/api/v1/yaml/validate`                 | Validate YAML syntax      |
+| **`POST`** | `/api/v1/yaml/lint`                     | Lint YAML file            |
+| **`POST`** | `/api/v1/yaml/format`                   | Format YAML               |
+| **`GET`**  | `/api/v1/yaml/templates`                | Fetch YAML templates      |
+| **`GET`**  | `/api/v1/yaml/templates/k8s`            | Kubernetes YAML templates |
+| **`GET`**  | `/api/v1/yaml/templates/docker`         | Docker YAML templates     |
+| **`GET`**  | `/api/v1/yaml/templates/github-actions` | GitHub Actions templates  |
+| **`GET`**  | `/api/v1/yaml/templates/gitlab-ci`      | GitLab CI templates       |
+| **`GET`**  | `/api/v1/yaml/templates/jenkins`        | Jenkins templates         |
+| **`POST`** | `/api/v1/yaml/compare`                  | Compare YAML files        |
+| **`POST`** | `/api/v1/yaml/merge`                    | Merge YAML files          |
+| **`GET`**  | `/api/v1/yaml/examples`                 | Fetch YAML examples       |
+| **`POST`** | `/api/v1/yaml/convert/json`             | Convert YAML to JSON      |
+| **`POST`** | `/api/v1/yaml/convert/yaml`             | Convert JSON to YAML      |
+| **`GET`**  | `/api/v1/yaml/best-practices`           | YAML best practices       |
+
+---
+
+# Pipeline Analytics Routes
+
+| Method    | Endpoint                         | Description                   |
+| :-------- | :------------------------------- | :---------------------------- |
+| **`GET`** | `/api/v1/analytics/summary`      | Workflow analytics summary    |
+| **`GET`** | `/api/v1/analytics/failures`     | Pipeline failure analytics    |
+| **`GET`** | `/api/v1/analytics/success-rate` | Pipeline success rate         |
+| **`GET`** | `/api/v1/analytics/deployments`  | Deployment analytics          |
+| **`GET`** | `/api/v1/analytics/build-times`  | Build time analytics          |
+| **`GET`** | `/api/v1/analytics/top-tools`    | Most used tools               |
+| **`GET`** | `/api/v1/analytics/top-errors`   | Most common errors            |
+| **`GET`** | `/api/v1/analytics/usage`        | Usage analytics               |
+| **`GET`** | `/api/v1/analytics/trending`     | Trending technologies         |
+| **`GET`** | `/api/v1/analytics/latest`       | Latest analytics              |
+| **`GET`** | `/api/v1/analytics/growth`       | Growth analytics              |
+| **`GET`** | `/api/v1/analytics/performance`  | Performance metrics           |
+| **`GET`** | `/api/v1/analytics/security`     | Security analytics            |
+| **`GET`** | `/api/v1/analytics/costs`        | Infrastructure cost analytics |
+| **`GET`** | `/api/v1/analytics/cloud-usage`  | Cloud usage analytics         |
+
+---
+
+# Troubleshooting & Debugging Routes
+
+| Method    | Endpoint                       | Description                    |
+| :-------- | :----------------------------- | :----------------------------- |
+| **`GET`** | `/api/v1/debug/common-issues`  | Common issues                  |
+| **`GET`** | `/api/v1/debug/logs`           | Debug logs                     |
+| **`GET`** | `/api/v1/debug/connectivity`   | Connectivity troubleshooting   |
+| **`GET`** | `/api/v1/debug/errors`         | Common error fixes             |
+| **`GET`** | `/api/v1/debug/k8s`            | Kubernetes troubleshooting     |
+| **`GET`** | `/api/v1/debug/docker`         | Docker troubleshooting         |
+| **`GET`** | `/api/v1/debug/jenkins`        | Jenkins troubleshooting        |
+| **`GET`** | `/api/v1/debug/github-actions` | GitHub Actions troubleshooting |
+| **`GET`** | `/api/v1/debug/gitlab-ci`      | GitLab CI troubleshooting      |
+| **`GET`** | `/api/v1/debug/terraform`      | Terraform troubleshooting      |
+| **`GET`** | `/api/v1/debug/aws`            | AWS troubleshooting            |
+| **`GET`** | `/api/v1/debug/gcp`            | GCP troubleshooting            |
+| **`GET`** | `/api/v1/debug/azure`          | Azure troubleshooting          |
+| **`GET`** | `/api/v1/debug/network`        | Network troubleshooting        |
+| **`GET`** | `/api/v1/debug/security`       | Security troubleshooting       |
+
+---
+
+# Authentication & Authorization Routes
+
+| Method       | Endpoint                       | Description        |
+| :----------- | :----------------------------- | :----------------- |
+| **`POST`**   | `/api/v1/auth/register`        | Register new user  |
+| **`POST`**   | `/api/v1/auth/login`           | User login         |
+| **`POST`**   | `/api/v1/auth/logout`          | User logout        |
+| **`POST`**   | `/api/v1/auth/refresh-token`   | Refresh JWT token  |
+| **`GET`**    | `/api/v1/auth/profile`         | Fetch user profile |
+| **`PATCH`**  | `/api/v1/auth/profile`         | Update profile     |
+| **`DELETE`** | `/api/v1/auth/profile`         | Delete account     |
+| **`POST`**   | `/api/v1/auth/change-password` | Change password    |
+| **`POST`**   | `/api/v1/auth/forgot-password` | Forgot password    |
+| **`POST`**   | `/api/v1/auth/reset-password`  | Reset password     |
+| **`POST`**   | `/api/v1/auth/verify-email`    | Verify email       |
+| **`GET`**    | `/api/v1/auth/sessions`        | Fetch sessions     |
+| **`DELETE`** | `/api/v1/auth/sessions/:id`    | Remove session     |
+| **`POST`**   | `/api/v1/auth/2fa/enable`      | Enable 2FA         |
+| **`POST`**   | `/api/v1/auth/2fa/disable`     | Disable 2FA        |
+
+---
+
+# Admin & Management Routes
+
+| Method       | Endpoint                          | Description        |
+| :----------- | :-------------------------------- | :----------------- |
+| **`GET`**    | `/api/v1/admin/users`             | Fetch all users    |
+| **`GET`**    | `/api/v1/admin/users/:id`         | Fetch user details |
+| **`PATCH`**  | `/api/v1/admin/users/:id/role`    | Update user role   |
+| **`PATCH`**  | `/api/v1/admin/users/:id/block`   | Block user         |
+| **`PATCH`**  | `/api/v1/admin/users/:id/unblock` | Unblock user       |
+| **`GET`**    | `/api/v1/admin/reports`           | Fetch reports      |
+| **`GET`**    | `/api/v1/admin/logs`              | Fetch admin logs   |
+| **`GET`**    | `/api/v1/admin/system/health`     | System health      |
+| **`POST`**   | `/api/v1/admin/system/restart`    | Restart services   |
+| **`DELETE`** | `/api/v1/admin/cache/clear`       | Clear cache        |
+| **`GET`**    | `/api/v1/admin/security/events`   | Security events    |
+| **`POST`**   | `/api/v1/admin/security/block-ip` | Block IP           |
+| **`GET`**    | `/api/v1/admin/backups`           | Fetch backups      |
+| **`POST`**   | `/api/v1/admin/backups/create`    | Create backup      |
+| **`DELETE`** | `/api/v1/admin/backups/:id`       | Delete backup      |
+
+---
+
+# Monitoring & Alerting Routes
+
+| Method       | Endpoint                           | Description           |
+| :----------- | :--------------------------------- | :-------------------- |
+| **`GET`**    | `/api/v1/monitoring/prometheus`    | Prometheus monitoring |
+| **`GET`**    | `/api/v1/monitoring/grafana`       | Grafana dashboards    |
+| **`GET`**    | `/api/v1/monitoring/alerts`        | Alert rules           |
+| **`GET`**    | `/api/v1/monitoring/uptime`        | Uptime monitoring     |
+| **`GET`**    | `/api/v1/monitoring/cpu`           | CPU monitoring        |
+| **`GET`**    | `/api/v1/monitoring/memory`        | Memory monitoring     |
+| **`GET`**    | `/api/v1/monitoring/network`       | Network monitoring    |
+| **`GET`**    | `/api/v1/monitoring/storage`       | Storage monitoring    |
+| **`POST`**   | `/api/v1/monitoring/alerts/create` | Create alert          |
+| **`DELETE`** | `/api/v1/monitoring/alerts/:id`    | Delete alert          |
+
+---
+
+# Notifications & Collaboration Routes
+
+| Method       | Endpoint                         | Description               |
+| :----------- | :------------------------------- | :------------------------ |
+| **`GET`**    | `/api/v1/notifications`          | Fetch notifications       |
+| **`PATCH`**  | `/api/v1/notifications/:id/read` | Mark notification as read |
+| **`DELETE`** | `/api/v1/notifications/:id`      | Delete notification       |
+| **`POST`**   | `/api/v1/comments/:workflowId`   | Add comment               |
+| **`GET`**    | `/api/v1/comments/:workflowId`   | Fetch comments            |
+| **`PATCH`**  | `/api/v1/comments/:commentId`    | Update comment            |
+| **`DELETE`** | `/api/v1/comments/:commentId`    | Delete comment            |
+| **`POST`**   | `/api/v1/reviews/:workflowId`    | Submit review             |
+| **`GET`**    | `/api/v1/reviews/:workflowId`    | Fetch reviews             |
+| **`POST`**   | `/api/v1/workflows/:id/bookmark` | Bookmark workflow         |
+
+---
+
+# System & Utility Routes
+
+| Method    | Endpoint                     | Description             |
+| :-------- | :--------------------------- | :---------------------- |
+| **`GET`** | `/api/v1/health`             | API health check        |
+| **`GET`** | `/api/v1/system/info`        | System information      |
+| **`GET`** | `/api/v1/system/version`     | API version             |
+| **`GET`** | `/api/v1/system/uptime`      | System uptime           |
+| **`GET`** | `/api/v1/system/config`      | Public configuration    |
+| **`GET`** | `/api/v1/system/status`      | System status           |
+| **`GET`** | `/api/v1/system/memory`      | Memory usage            |
+| **`GET`** | `/api/v1/system/storage`     | Storage usage           |
+| **`GET`** | `/api/v1/system/connections` | Active connections      |
+| **`GET`** | `/api/v1/system/environment` | Environment information |
+
+---
+
+# Good to Have Routes (HEAD & OPTIONS)
+
+| Method   | Endpoint                            | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| **HEAD** | `/api/v1/workflows`                 | Check workflows resource availability     |
+| **HEAD** | `/api/v1/workflows/:id`             | Check workflow existence                  |
+| **HEAD** | `/api/v1/workflows/:id/logs`        | Check workflow logs availability          |
+| **HEAD** | `/api/v1/workflows/:id/metrics`     | Check workflow metrics availability       |
+| **HEAD** | `/api/v1/workflows/latest`          | Check latest workflows endpoint           |
+| **HEAD** | `/api/v1/workflows/trending`        | Check trending workflows endpoint         |
+| **HEAD** | `/api/v1/workflows/recommended`     | Check recommended workflows endpoint      |
+| **HEAD** | `/api/v1/workflows/popular`         | Check popular workflows endpoint          |
+| **HEAD** | `/api/v1/infra/k8s`                 | Check Kubernetes guides availability      |
+| **HEAD** | `/api/v1/infra/docker`              | Check Docker guides availability          |
+| **HEAD** | `/api/v1/infra/terraform`           | Check Terraform guides availability       |
+| **HEAD** | `/api/v1/infra/security`            | Check infrastructure security guides      |
+| **HEAD** | `/api/v1/search?q=github-actions`   | Validate global search endpoint           |
+| **HEAD** | `/api/v1/search/autocomplete?q=kub` | Validate autocomplete endpoint            |
+| **HEAD** | `/api/v1/search/fuzzy?q=dokcer`     | Validate fuzzy search endpoint            |
+| **HEAD** | `/api/v1/yaml/templates/k8s`        | Check Kubernetes YAML templates           |
+| **HEAD** | `/api/v1/yaml/best-practices`       | Check YAML best practices endpoint        |
+| **HEAD** | `/api/v1/analytics/summary`         | Check analytics summary endpoint          |
+| **HEAD** | `/api/v1/analytics/security`        | Check security analytics endpoint         |
+| **HEAD** | `/api/v1/debug/k8s`                 | Check Kubernetes troubleshooting endpoint |
+| **HEAD** | `/api/v1/debug/docker`              | Check Docker troubleshooting endpoint     |
+| **HEAD** | `/api/v1/auth/profile`              | Check authenticated profile endpoint      |
+| **HEAD** | `/api/v1/admin/system/health`       | Check admin system health endpoint        |
+| **HEAD** | `/api/v1/monitoring/prometheus`     | Check Prometheus monitoring endpoint      |
+| **HEAD** | `/api/v1/notifications`             | Check notifications endpoint              |
+| **HEAD** | `/api/v1/system/status`             | Check system status endpoint              |
+| **HEAD** | `/api/v1/system/storage`            | Check storage analytics endpoint          |
+| **HEAD** | `/api/v1/system/environment`        | Check environment information endpoint    |
+| **OPTIONS** | `/api/v1/workflows`                | Supported methods for workflows collection   |
+| **OPTIONS** | `/api/v1/workflows/:id`            | Supported methods for workflow resource      |
+| **OPTIONS** | `/api/v1/workflows/:id/run`        | Allowed methods for workflow execution       |
+| **OPTIONS** | `/api/v1/workflows/:id/cancel`     | Allowed methods for workflow cancellation    |
+| **OPTIONS** | `/api/v1/workflows/:id/logs`       | Allowed methods for workflow logs            |
+| **OPTIONS** | `/api/v1/infra/k8s`                | Allowed methods for Kubernetes guides        |
+| **OPTIONS** | `/api/v1/infra/docker`             | Allowed methods for Docker guides            |
+| **OPTIONS** | `/api/v1/infra/terraform`          | Allowed methods for Terraform guides         |
+| **OPTIONS** | `/api/v1/search`                   | Allowed methods for search endpoint          |
+| **OPTIONS** | `/api/v1/search/advanced`          | Allowed methods for advanced search          |
+| **OPTIONS** | `/api/v1/search/filter`            | Allowed methods for combined filtering       |
+| **OPTIONS** | `/api/v1/yaml/validate`            | Allowed methods for YAML validation          |
+| **OPTIONS** | `/api/v1/yaml/lint`                | Allowed methods for YAML linting             |
+| **OPTIONS** | `/api/v1/yaml/compare`             | Allowed methods for YAML comparison          |
+| **OPTIONS** | `/api/v1/yaml/merge`               | Allowed methods for YAML merge               |
+| **OPTIONS** | `/api/v1/analytics/summary`        | Allowed methods for analytics summary        |
+| **OPTIONS** | `/api/v1/analytics/performance`    | Allowed methods for performance analytics    |
+| **OPTIONS** | `/api/v1/debug/k8s`                | Allowed methods for Kubernetes debugging     |
+| **OPTIONS** | `/api/v1/debug/github-actions`     | Allowed methods for GitHub Actions debugging |
+| **OPTIONS** | `/api/v1/auth/login`               | Allowed authentication methods               |
+| **OPTIONS** | `/api/v1/auth/register`            | Allowed registration methods                 |
+| **OPTIONS** | `/api/v1/auth/profile`             | Allowed profile operations                   |
+| **OPTIONS** | `/api/v1/auth/2fa/enable`          | Allowed methods for enabling 2FA             |
+| **OPTIONS** | `/api/v1/admin/users`              | Allowed admin user methods                   |
+| **OPTIONS** | `/api/v1/admin/system/restart`     | Allowed restart operations                   |
+| **OPTIONS** | `/api/v1/admin/cache/clear`        | Allowed cache clear operations               |
+| **OPTIONS** | `/api/v1/monitoring/alerts/create` | Allowed alert creation methods               |
+| **OPTIONS** | `/api/v1/notifications`            | Allowed notification operations              |
+| **OPTIONS** | `/api/v1/comments/:workflowId`     | Allowed comment operations                   |
+| **OPTIONS** | `/api/v1/reviews/:workflowId`      | Allowed review operations                    |
+| **OPTIONS** | `/api/v1/system/status`            | Allowed system status operations             |
+| **OPTIONS** | `/api/v1/system/environment`       | Allowed environment operations               |
