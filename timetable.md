@@ -12,11 +12,11 @@
 
 | Time        | CG LAB 1              | Time        | CG LAB 2              |
 | ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | Ashish Sir (Maths)    | 9:00–10:30  | Samir Sir (C++)       |
-| 10:30–12:00 | Samir Sir (C++)       | 10:30–12:00 | Ashish Sir (Maths)    |
+| 9:00–10:30  | Ashish Sir (Maths)    | 9:00–10:30  |  (EVS)                |
+| 10:30–12:00 |   (EVS)               | 10:30–12:00 | Ashish Sir (Maths)    |
 | 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:00   | Ranjan Sir (React)    | 1:00–2:00   | (EVS)                 |
-| 2:00–3:00   |  (EVS)                | 2:00–3:00   | Yogesh Sir (Node.js)  |
+| 1:00–2:00   | Ranjan Sir (React)    | 1:00–2:00   | Samir Sir (C++)       |
+| 2:00–3:00   |  Samir Sir (C++)      | 2:00–3:00   | Yogesh Sir (Node.js)  |
 | 3:00–4:00   |  Yogesh Sir (Node.js) | 3:00–4:00   | Ranjan Sir (React)    |
 | 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
 | 4:15–5:15   | Industry Readiness 01 | 4:15–5:15   | Industry Readiness 01 |
