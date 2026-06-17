@@ -56,9 +56,8 @@
 | 9:00–10:30  | Ranjan Sir (React)    | 9:00–10:30  | Samir Sir (Angular)   |
 | 10:30–12:00 | Samir Sir (Angular)   | 10:30–12:00 | Ranjan Sir (React)    |
 | 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:00   | Ranjan Sir (React)    | 1:00–2:00   | Neel Sir (Redis)      |
-| 2:00–3:00   | Neel Sir (Redis)      | 2:00–3:00   | Samir Sir (C++)       |
-| 3:00–4:00   | Samir Sir (C++)       | 3:00–4:00   | Ranjan Sir (React)    |
+| 1:00–2:30   | Samir Sir (C++)       | 1:00–2:30   | Ashish Sir (Maths)    |
+| 2:30–4:00   | Ashish Sir (Maths)    | 2:30–4:00   | Samir Sir (C++)       |
 | 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
 | 4:15–5:15   | Industry Readiness 01 | 4:15–5:15   | Industry Readiness 01 |
 | 5:15–6:00   | Industry Readiness 02 | 5:15–6:00   | Industry Readiness 02 |
